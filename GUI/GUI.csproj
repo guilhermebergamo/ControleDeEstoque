@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09D80325-E790-4036-B82B-A16E233F9958}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_BackupBancoDeDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BackupBancoDeDados.Designer.cs">
+      <DependentUpon>Frm_BackupBancoDeDados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadastroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadastroCategoria.Designer.cs">
+      <DependentUpon>Frm_CadastroCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadastroCliente.Designer.cs">
+      <DependentUpon>Frm_CadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadastroFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadastroFornecedor.Designer.cs">
+      <DependentUpon>Frm_CadastroFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadastroProduto.Designer.cs">
+      <DependentUpon>Frm_CadastroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadastroSubCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadastroSubCategoria.Designer.cs">
+      <DependentUpon>Frm_CadastroSubCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadastroTipoDePagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadastroTipoDePagamento.Designer.cs">
+      <DependentUpon>Frm_CadastroTipoDePagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConfiguracaoBancodeDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConfiguracaoBancodeDados.Designer.cs">
+      <DependentUpon>Frm_ConfiguracaoBancodeDados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsultaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsultaCategoria.Designer.cs">
+      <DependentUpon>Frm_ConsultaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsultaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsultaCliente.Designer.cs">
+      <DependentUpon>Frm_ConsultaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsultaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsultaCompra.Designer.cs">
+      <DependentUpon>Frm_ConsultaCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsultaFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsultaFornecedor.Designer.cs">
+      <DependentUpon>Frm_ConsultaFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsultaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsultaProduto.Designer.cs">
+      <DependentUpon>Frm_ConsultaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsultaSubCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsultaSubCategoria.Designer.cs">
+      <DependentUpon>Frm_ConsultaSubCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsultaTipoPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsultaTipoPagamento.Designer.cs">
+      <DependentUpon>Frm_ConsultaTipoPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsultaUnidadeDeMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsultaUnidadeDeMedida.Designer.cs">
+      <DependentUpon>Frm_ConsultaUnidadeDeMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ModeloDeFormularioDeCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ModeloDeFormularioDeCadastro.Designer.cs">
+      <DependentUpon>Frm_ModeloDeFormularioDeCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MovimentacaoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MovimentacaoCompra.Designer.cs">
+      <DependentUpon>Frm_MovimentacaoCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Principal.Designer.cs">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadastroUnidadeDeMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadastroUnidadeDeMedida.Designer.cs">
+      <DependentUpon>Frm_CadastroUnidadeDeMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Sobre.Designer.cs">
+      <DependentUpon>Frm_Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_BackupBancoDeDados.resx">
+      <DependentUpon>Frm_BackupBancoDeDados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadastroCategoria.resx">
+      <DependentUpon>Frm_CadastroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadastroCliente.resx">
+      <DependentUpon>Frm_CadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadastroFornecedor.resx">
+      <DependentUpon>Frm_CadastroFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadastroProduto.resx">
+      <DependentUpon>Frm_CadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadastroSubCategoria.resx">
+      <DependentUpon>Frm_CadastroSubCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadastroTipoDePagamento.resx">
+      <DependentUpon>Frm_CadastroTipoDePagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConfiguracaoBancodeDados.resx">
+      <DependentUpon>Frm_ConfiguracaoBancodeDados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsultaCategoria.resx">
+      <DependentUpon>Frm_ConsultaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsultaCliente.resx">
+      <DependentUpon>Frm_ConsultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsultaCompra.resx">
+      <DependentUpon>Frm_ConsultaCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsultaFornecedor.resx">
+      <DependentUpon>Frm_ConsultaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsultaProduto.resx">
+      <DependentUpon>Frm_ConsultaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsultaSubCategoria.resx">
+      <DependentUpon>Frm_ConsultaSubCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsultaTipoPagamento.resx">
+      <DependentUpon>Frm_ConsultaTipoPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsultaUnidadeDeMedida.resx">
+      <DependentUpon>Frm_ConsultaUnidadeDeMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ModeloDeFormularioDeCadastro.resx">
+      <DependentUpon>Frm_ModeloDeFormularioDeCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MovimentacaoCompra.resx">
+      <DependentUpon>Frm_MovimentacaoCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Principal.resx">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadastroUnidadeDeMedida.resx">
+      <DependentUpon>Frm_CadastroUnidadeDeMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Sobre.resx">
+      <DependentUpon>Frm_Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{fc3550d1-26fb-45b0-93ea-dac3ad3d7afb}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL\BLL.csproj">
+      <Project>{f269a27a-bcc6-43db-a12e-1ed19b258483}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ferramentas\Ferramentas.csproj">
+      <Project>{8a146eb4-b21d-4836-a343-d071362ef7b4}</Project>
+      <Name>Ferramentas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{69818ea5-ef3a-4ac5-bfac-e8eaf549bec0}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alterar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avançar1.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\localizar.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Novo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primeiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salvar1.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ultimo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Voltar1.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DADO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DADO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DADO2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DADO3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BEM VINDO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BEM VINDO1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DADO4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo finch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo finch2222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BEM VINDO2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BEM VINDO3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo finch1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo finch22221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finch1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo Panel1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estoque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estoque1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
